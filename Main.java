@@ -231,7 +231,7 @@ public class Main extends JFrame{
 		public void actionPerformed(ActionEvent e){
 			players = getPlayerNames();
 			GoFish gf = new GoFish(players);
-			gf.playGoFish(deck);
+			gf.play(deck);
 		}
 	}
 	public static void askHowManyPlayers(){

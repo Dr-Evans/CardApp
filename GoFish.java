@@ -12,7 +12,7 @@ public class GoFish extends Game{
 	}
 	
 	//Players play go fish with each other
-	public void playGoFish(Deck deck){
+	public void play(Deck deck){
 		
 	}
 }
