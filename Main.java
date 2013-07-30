@@ -27,6 +27,7 @@ public class Main extends JFrame{
 	JButton jbMergeDeck;
 	JButton jbPlayWar;
 	JButton jbPlayBlackjack;
+	JButton jbPlayGoFish;
 	Deck deck;
 	
 	public Main(String s){
@@ -118,12 +119,15 @@ public class Main extends JFrame{
 		
 		jbPlayWar = new JButton("Play War");
 		jbPlayBlackjack = new JButton("Play Blackjack");
+		jbPlayGoFish = new JButton("Play Go Fish");
 		
 		jbPlayWar.addActionListener(new PlayWarListener());
 		jbPlayBlackjack.addActionListener(new PlayBlackjackListener());
+		jbPlayGoFish.addActionListener(new PlayGoFishListener());
 		
 		pBottom.add(jbPlayWar);
 		pBottom.add(jbPlayBlackjack);
+		pBottom.add(jbPlayGoFish);
 		
 		add(pBottom, BorderLayout.SOUTH);
 	}
@@ -220,6 +224,14 @@ public class Main extends JFrame{
 			players = getPlayerNames();
 			Blackjack bj = new Blackjack(players);
 			bj.play(deck);
+		}
+	}
+	
+	class PlayGoFishListener implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			players = getPlayerNames();
+			GoFish gf = new GoFish(players);
+			gf.playGoFish(deck);
 		}
 	}
 	public static void askHowManyPlayers(){
