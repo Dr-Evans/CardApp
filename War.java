@@ -21,7 +21,7 @@ public class War extends Game{
 	 * The player who runs out of cards first loses! 
 	 * */
 	
-	public void playWar(Deck deck){
+	public void play(Deck deck){
 		//Get player names
 		ArrayList<Player> players = this.getPlayers();
 		Player player1 = players.get(0);

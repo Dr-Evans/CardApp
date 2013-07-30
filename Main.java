@@ -211,7 +211,7 @@ public class Main extends JFrame{
 		public void actionPerformed(ActionEvent e){
 			players = getPlayerNames();
 			War w = new War(players);
-			w.playWar(deck);
+			w.play(deck);
 		}
 	}
 	
@@ -219,7 +219,7 @@ public class Main extends JFrame{
 		public void actionPerformed(ActionEvent e){
 			players = getPlayerNames();
 			Blackjack bj = new Blackjack(players);
-			bj.playBlackjack(deck);
+			bj.play(deck);
 		}
 	}
 	public static void askHowManyPlayers(){

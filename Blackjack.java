@@ -16,7 +16,7 @@ public class Blackjack extends Game {
 		super("Blackjack", players);	
 	}
 	
-	public void playBlackjack(Deck deck){
+	public void play(Deck deck){
 		this.deck = deck;
 		
 		Player dealer = new Player("Dealer", 0);
