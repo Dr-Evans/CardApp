@@ -234,6 +234,7 @@ public class Main extends JFrame{
 			gf.play(deck);
 		}
 	}
+	
 	public static void askHowManyPlayers(){
 		numOfPlayers = Integer.parseInt((String)JOptionPane.showInputDialog(null, "How many players?", "Startup", JOptionPane.INFORMATION_MESSAGE));
 	}
